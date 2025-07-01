@@ -1,0 +1,53 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <linearGradient id="shieldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4ECCA3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3cb38c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lockGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EEEEEE;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Shield Background -->
+  <path d="M50 10 L75 25 L75 45 Q75 65 50 85 Q25 65 25 45 L25 25 Z" 
+        fill="url(#shieldGradient)" 
+        stroke="#2a9d8f" 
+        stroke-width="2"/>
+  
+  <!-- Lock Body -->
+  <rect x="40" y="45" width="20" height="15" 
+        rx="2" ry="2" 
+        fill="url(#lockGradient)"/>
+  
+  <!-- Lock Shackle -->
+  <path d="M45 45 L45 40 Q45 35 50 35 Q55 35 55 40 L55 45" 
+        fill="none" 
+        stroke="url(#lockGradient)" 
+        stroke-width="3" 
+        stroke-linecap="round"/>
+  
+  <!-- Binary Code Pattern -->
+  <text x="35" y="75" font-family="monospace" font-size="4" fill="#4ECCA3" opacity="0.7">101</text>
+  <text x="55" y="75" font-family="monospace" font-size="4" fill="#4ECCA3" opacity="0.7">010</text>
+  
+  <!-- Cyber Circuit Lines -->
+  <g stroke="#4ECCA3" stroke-width="1" opacity="0.4" fill="none">
+    <line x1="30" y1="30" x2="35" y2="35"/>
+    <line x1="35" y1="35" x2="40" y2="35"/>
+    <circle cx="35" cy="35" r="1" fill="#4ECCA3"/>
+    
+    <line x1="70" y1="30" x2="65" y2="35"/>
+    <line x1="65" y1="35" x2="60" y2="35"/>
+    <circle cx="65" cy="35" r="1" fill="#4ECCA3"/>
+  </g>
+  
+  <!-- Glow Effect -->
+  <path d="M50 10 L75 25 L75 45 Q75 65 50 85 Q25 65 25 45 L25 25 Z" 
+        fill="none" 
+        stroke="#4ECCA3" 
+        stroke-width="1" 
+        opacity="0.5"/>
+</svg>
